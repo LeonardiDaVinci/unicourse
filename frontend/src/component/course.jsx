@@ -139,7 +139,7 @@ const Course = () => {
                                         <div className="course-inner">
                                             <div className="course-thumb">
                                                 <img src={imgUrl} alt={imgAlt} />
-                                                <div className="course-category">
+                                                <div className="course-category" style={{ "background": "#55ACEE" }}>
                                                     <div className="course-cate">
                                                         <a href="#">{cate}</a>
                                                     </div>

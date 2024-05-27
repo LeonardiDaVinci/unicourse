@@ -1321,7 +1321,6 @@ a {
 .header-section.style-6 .header-top .header-top-area .header-top-contact a,
 .header-section.style-3 .header-top .header-top-area .header-top-reglog a,
 .header-section.style-3 .header-top .header-top-area .header-top-contact a,
-.count-item .count-inner .count-icon i,
 .post-item.qute-post .post-inner .post-thumb .qute-content h4,
 .post-item.style-3 .post-inner .post-content .lab-btn:hover span,
 .post-item .post-inner .post-footer .pf-right .comment-count,
@@ -1335,6 +1334,11 @@ a {
 .course-navi {
   color: #fff;
 }
+
+.count-item .count-inner .count-icon i{
+  color: white;
+}
+
 .news-letter .section-wrapper .news-form form .nf-list input[type="email"],
 .widget.widget-search,
 .widget,
@@ -1915,7 +1919,6 @@ footer.style-2
 .feature-item .feature-inner .feature-content .lab-btn-text span::after,
 .feature-item .feature-inner .feature-content .lab-btn-text span::before,
 .feature-item .feature-inner .feature-content .lab-btn-text span,
-.count-item .count-inner .count-icon i,
 .post-item.style-3 .post-inner .post-content .lab-btn:hover,
 .post-item .post-inner .post-footer .pf-right .comment-count,
 .course-item.style-3 .course-inner .course-content .lab-btn:hover,
@@ -1948,12 +1951,6 @@ footer.style-2
   .count-inner
   .count-icon
   i,
-.instructor-section.style-2
-  .section-wrapper
-  .count-item:nth-child(3n + 2)
-  .count-inner
-  .count-icon
-  i,
 .about-section.style-4
   .about-item
   .counter-part
@@ -1969,6 +1966,7 @@ footer.style-2
 .course-navi.active {
   background: #55ACEE;
 }
+
 .widget.widget-search .search-wrapper button,
 .widget.widget-search .search-wrapper input,
 .comment-respond .add-comment .comment-form input,
@@ -3134,12 +3132,6 @@ footer.style-2
   .instructor-bottom
   .instructor-slider
   .instructor-navi:hover,
-.instructor-section.style-2
-  .section-wrapper
-  .count-item:nth-child(3n + 3)
-  .count-inner
-  .count-icon
-  i,
 .instructor-section.style-2::after,
 .offer-section .section-wrapper .lab-btn,
 .contact-info-section .section-wrapper .cinfo-or,
@@ -3196,7 +3188,32 @@ footer.style-2
   background: #55ACEE;
 }
 
+.instructor-section.style-2
+  .section-wrapper
+  .count-item:nth-child(3n + 1)
+  .count-inner
+  .count-icon
+  i{
+    background-color: rgb(144, 1, 1);
+  }
 
+.instructor-section.style-2
+  .section-wrapper
+  .count-item:nth-child(3n + 2)
+  .count-inner
+  .count-icon
+  i{
+    background-color: rgb(4, 106, 4);
+  }
+
+.instructor-section.style-2
+  .section-wrapper
+  .count-item:nth-child(3n + 3)
+  .count-inner
+  .count-icon
+  i{
+    background-color: #ffdf408a;
+  }
 
 .category-content
 .cate-icon{

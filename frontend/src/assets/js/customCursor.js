@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 const CustomCursor = () => {
-    const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
+    const [cursorPos, setCursorPos] = useState({ x: -20, y: -20 });
   
     useEffect(() => {
       const moveCursor = (e) => {
@@ -25,7 +25,7 @@ const CustomCursor = () => {
           width: '30px',
           height: '30px',
           borderRadius: '50%',
-          border: '3px solid black',
+          border: '3px solid #257AE7 ',
           zIndex: 9999,
           pointerEvents: 'none'
         }}

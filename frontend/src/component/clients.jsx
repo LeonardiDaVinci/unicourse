@@ -1,4 +1,4 @@
-import { Autoplay, Navigation } from "swiper";
+import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Client1 from "../assets/images/clients/01.jpg";
 import Client2 from "../assets/images/clients/02.jpg";
@@ -57,7 +57,7 @@ const Clients = () => {
                 prevEl: ".clients-slider2-prev",
                 nextEl: ".clients-slider2-next",
               }}
-            //   modules={[Autoplay, Navigation]}
+              modules={[Autoplay, Navigation]}
             >
               {clientSliderList.map((val, index) => (
                 <SwiperSlide key={index}>

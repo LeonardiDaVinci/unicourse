@@ -4,7 +4,6 @@ import Client1 from "../assets/images/clients/01.jpg";
 import Client2 from "../assets/images/clients/02.jpg";
 import Client3 from "../assets/images/clients/03.jpg";
 
-
 const subTitle = "Testimonials";
 const title = "What People Say";
 const absTitle = "Testimonials";
@@ -82,11 +81,11 @@ const Clients = () => {
               ))}
             </Swiper>
 
-            <div className="clients-slider-nav clients-slider2-next">
-              <i className="icofont-double-left"></i>
-            </div>
             <div className="clients-slider-nav clients-slider2-prev">
               <i className="icofont-double-right"></i>
+            </div>
+            <div className="clients-slider-nav clients-slider2-next">
+              <i className="icofont-double-left"></i>
             </div>
           </div>
         </div>

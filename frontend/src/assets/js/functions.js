@@ -180,24 +180,6 @@
             loop: true,
         });
 
-        // clients-slider
-        var swiper = new Swiper(".clients-slider", {
-            slidesPerView: 3,
-            spaceBetween: 15,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
-            breakpoints: {
-                768: {
-                    slidesPerView: 2,
-                },
-                420: {
-                    slidesPerView: 1,
-                },
-            },
-            loop: true,
-        });
         // clients-slider2
         var swiper = new Swiper(".clients-slider2", {
             slidesPerView: 1,

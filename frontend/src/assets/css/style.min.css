@@ -8266,12 +8266,12 @@ button {
 .clients-section.style-3:hover
   .section-wrapper
   .clients-slider-nav.clients-slider2-next {
-  left: 0px;
+  right: 0px;
 }
 .clients-section.style-3:hover
   .section-wrapper
   .clients-slider-nav.clients-slider2-prev {
-  right: 0px;
+  left: 0px;
 }
 .clients-section.style-3 .section-header .abs-title {
   font-size: 52px;
@@ -8372,7 +8372,7 @@ button {
 .clients-section.style-3
   .section-wrapper
   .clients-slider-nav.clients-slider2-next {
-  left: -50px;
+  right: 0;
 }
 .clients-section.style-3
   .section-wrapper

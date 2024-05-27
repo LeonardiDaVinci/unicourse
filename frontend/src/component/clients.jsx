@@ -82,11 +82,13 @@ const Clients = () => {
             </Swiper>
 
             <div className="clients-slider-nav clients-slider2-prev">
-              <i className="icofont-double-right"></i>
-            </div>
-            <div className="clients-slider-nav clients-slider2-next">
               <i className="icofont-double-left"></i>
             </div>
+
+            <div className="clients-slider-nav clients-slider2-next">
+              <i className="icofont-double-right"></i>
+            </div>
+
           </div>
         </div>
       </div>

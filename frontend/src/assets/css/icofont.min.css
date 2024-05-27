@@ -3896,6 +3896,7 @@
 }
 .icofont-users-alt-4:before {
   content: "\ed09";
+  color: #55ACEE;
 }
 .icofont-users-alt-5:before {
   content: "\ed0a";
@@ -4079,6 +4080,7 @@
 }
 .icofont-instagram:before {
   content: "\ed46";
+  color: #0e1111;
 }
 .icofont-kakaotalk:before {
   content: "\ed47";
@@ -4100,6 +4102,7 @@
 }
 .icofont-linkedin:before {
   content: "\ed4d";
+  color: #0e1111
 }
 .icofont-linux-mint:before {
   content: "\ed4e";
@@ -4235,6 +4238,8 @@
 }
 .icofont-twitter:before {
   content: "\ed7a";
+  color: #0e1111;
+
 }
 .icofont-typo3:before {
   content: "\ed7b";
@@ -5591,6 +5596,7 @@
 }
 .icofont-globe:before {
   content: "\ef3e";
+  color: #55ACEE;
 }
 .icofont-graffiti:before {
   content: "\ef3f";
@@ -5642,6 +5648,7 @@
 }
 .icofont-info-square:before {
   content: "\ef4f";
+  color: #0e1111;
 }
 .icofont-info:before {
   content: "\ef50";
@@ -5921,6 +5928,7 @@
 }
 .icofont-notification:before {
   content: "\efac";
+  color: #55ACEE;
 }
 .icofont-numbered:before {
   content: "\efad";

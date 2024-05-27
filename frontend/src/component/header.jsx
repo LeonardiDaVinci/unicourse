@@ -36,7 +36,7 @@ const Header = () => {
 
     return (
         <header className={`header-section ${headerFiexd ? "header-fixed fadeInUp" : ""}`}>
-            <div className={`header-top ${socialToggle ? "open" : ""}`}>
+            <div className={`header-top ${socialToggle ? "open scrolldown" : ""}`}>
                 <div className="container">
                     <div className="header-top-area">
                         <ul className="lab-ul left">
@@ -57,21 +57,13 @@ const Header = () => {
                 <div className="container">
                     <div className="header-wrapper">
                         <div className="logo">
-                            <Link to="/"><img style={{ width: "80px" }} src= { Logo } alt="logo" /></Link>
+                            <Link to="/"><img style={{ width: "64px" }} src= { Logo } alt="logo" /></Link>
                         </div>
-                        <div className="menu-area">
+                        <div className="menu-area" style={{ color: "black" }}>
                             <div className="menu">
                                 <ul className={`lab-ul ${menuToggle ? "active" : ""}`}>
-                                    <li><NavLink to="/home">Home</NavLink></li>
-                                    <li>
-                                        <a href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,0">Categories</a>
-                                        <ul className="lab-ul dropdown-menu">
-                                            {/* Rencana mau bikin kayak categories di udemy */}
-                                            <li>
-                                                
-                                            </li>
-                                        </ul>
-                                    </li>
+                                    <li><NavLink to="/">Home</NavLink></li>
+                                    <li><NavLink to="/course">Course</NavLink></li>
                                     <li><NavLink to="/blog">Blog</NavLink></li>
                                     <li><NavLink to="/contact">Contact</NavLink></li>
                                 </ul>

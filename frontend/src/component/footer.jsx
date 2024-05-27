@@ -101,7 +101,6 @@ const supportList = [
 const Footer = () => {
   return (
     <div className="news-footer-wrap">
-
       <div className="news-letter" style={{ background: "#0e1111" }}>
         <div className="container">
           <div className="section-wrapper">
@@ -116,7 +115,12 @@ const Footer = () => {
                     name="email"
                     placeholder="Enter Your Email"
                   />
-                  <input type="submit" name="submit" value="Subscribe Now" />
+                  <input
+                    type="submit"
+                    name="submit"
+                    value="Subscribe Now"
+                    style={{ background: "#55ACEE" }}
+                  />
                 </div>
               </form>
             </div>

@@ -1423,6 +1423,7 @@ a {
 .clients-slider-nav {
   background-color: #fff;
 }
+
 footer.style-2
   .footer-top
   .footer-item.our-address
@@ -1816,7 +1817,7 @@ footer.style-2
 .news-letter .section-wrapper .news-form form .nf-list::after,
 .form-message.success,
 .skill-section .section-header .lab-btn span {
-  color: #26c976;
+  color: #55ACEE;
 }
 .widget.widget-tags ul.widget-wrapper li a.active,
 .widget.widget-tags ul.widget-wrapper li a:hover,
@@ -1927,8 +1928,9 @@ footer.style-2
 .or,
 .clients-slider-nav:hover,
 .course-navi {
-  background: #f16126;
+  background:#0e1111;
 }
+
 .news-letter .section-wrapper .news-form form .nf-list input[type="submit"],
 .footer-top .footer-item .footer-inner .footer-content .title h4::after,
 .course-side-detail .csd-content .course-enroll .lab-btn,
@@ -1965,7 +1967,7 @@ footer.style-2
 .post-item.qute-post .post-inner .post-thumb,
 .course-navi:hover,
 .course-navi.active {
-  background: #26c976;
+  background: #55ACEE;
 }
 .widget.widget-search .search-wrapper button,
 .widget.widget-search .search-wrapper input,
@@ -2889,6 +2891,7 @@ footer.style-2
   i {
   color: #55acee;
 }
+
 .choose-section .section-header ul li i,
 .register-section .section-header .subtitle,
 .feature-section.style-3
@@ -3015,7 +3018,7 @@ footer.style-2
 .lab-btn-text.yellow-color i,
 .yellow-color,
 .section-header .subtitle.yellow-color {
-  color: #ffdf40;
+  color: #55ACEE;
 }
 .social-icons li a.facebook {
   background: #3b5998;
@@ -3154,9 +3157,7 @@ footer.style-2
 .category-section.style-4
   .section-wrapper
   .category-item
-  .category-inner
-  .category-content
-  .cate-icon,
+  .category-inner,
 .banner-section.style-7
   .section-wrapper
   .banner-top
@@ -3192,8 +3193,16 @@ footer.style-2
   li
   .price,
 .yellow-color-section .section-header .course-navi {
-  background: #ffdf40;
+  background: #55ACEE;
 }
+
+
+
+.category-content
+.cate-icon{
+  background-color: #55ACEE;
+}
+
 .social-icons li a.pinterest {
   background: #bd081c;
 }
@@ -5181,10 +5190,15 @@ button {
 @media (max-width: 991px) {
   .header-top {
     display: none;
-    background-color: rgba(241, 97, 38, 0.95);
+    background-color: ffff;
   }
   .header-top.open {
     display: block !important;
+  }
+  .header-top.scrolldown{
+    background: #fdfdfd73;
+    backdrop-filter: blur(20.0px);
+    -webkit-backdrop-filter: blur(20.0px);
   }
 }
 .header-top-area .social-icons li {
@@ -5239,7 +5253,7 @@ button {
     flex-grow: 1;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     border-right: none;
-    color: #fff;
+    color: #0e1111;
   }
   .header-top-area .left li:first-child {
     border-top: none;
@@ -5257,7 +5271,7 @@ button {
   }
   .header-top-area .social-icons li p,
   .header-top-area .social-icons li a {
-    color: #fff;
+    color: #0e1111;
   }
 }
 .header-wrapper {
@@ -5417,7 +5431,7 @@ button {
     -ms-transform: scaleY(0);
     transform: scaleY(0);
     transform-origin: top;
-    background: #f16126;
+    background: #0e1111;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
   }
@@ -5435,7 +5449,7 @@ button {
     color: #fff;
   }
   .menu > ul li a:hover {
-    background: rgba(241, 97, 38, 0.6);
+    background: #757575;
   }
   .menu > ul li a.show::before {
     display: none;
@@ -5958,6 +5972,7 @@ button {
   font-weight: 500;
   text-decoration: underline;
 }
+
 @media (min-width: 576px) {
   .banner-section .section-wrapper .banner-content .banner-catagory ul li a {
     padding: 0 10px;
@@ -6025,10 +6040,11 @@ button {
   padding: 18px 40px;
 }
 .banner-section.style-4 {
-  background-image: url(../../assets/images/bg-img/06.jpg);
+  background: rgb(253, 252, 252);
   z-index: 1;
   padding-bottom: 100px;
 }
+
 @media (min-width: 992px) {
   .banner-section.style-4 {
     padding-top: 313px;
@@ -6231,7 +6247,7 @@ button {
 }
 .pageheader-section {
   padding: 250px 0 100px;
-  background-image: url(../images/pageheader/bg/01.jpg);
+  background-image: url(../images/pageheader/bg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

@@ -6056,11 +6056,13 @@ button {
 .banner-section.style-3 .banner-content .lab-btn {
   padding: 18px 40px;
 }
+
 .banner-section.style-4 {
-  background: rgb(253, 252, 252);
+  background-image: url("../images/bg-img/halo.jpg");
   z-index: 1;
   padding-bottom: 100px;
 }
+
 
 @media (min-width: 992px) {
   .banner-section.style-4 {

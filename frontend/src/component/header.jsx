@@ -35,7 +35,7 @@ const Header = () => {
 	});
 
     return (
-        <header className={`header-section ${headerFiexd ? "header-fixed fadeInUp" : ""}`}>
+        <header className={`header-section h-[64px] ${headerFiexd ? "header-fixed fadeInUp" : ""}`}>
             <div className={`header-top ${socialToggle ? "open scrolldown" : ""}`}>
                 <div className="container">
                     <div className="header-top-area">

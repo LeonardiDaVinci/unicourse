@@ -7,7 +7,7 @@ const Dropdown = ({heading, subCategories, callbackFn}) => {
     }
   return (
     <div className='flex flex-col'>
-        <div onClick={handleToggle} className='flex gap-2 justify-between'>
+        <div onClick={handleToggle} className='flex justify-between'>
             <p className='font-medium'>{heading}</p>
             <div>{'>'}</div>
         </div>

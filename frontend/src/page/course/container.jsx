@@ -57,7 +57,7 @@ const Container = () => {
         <div className="flex px-8 gap-8 w-full justify-between pt-6 ">
         {/* Sidebar */}
         <div className={`w-64 min-h-full ${isSticky ? "block" : "hidden"}`}></div>
-        <div className={`flex flex-col gap-2 w-64 min-h-full transition-all duration-300 ${isSticky ? "fixed top-[124px] w-52" : ""} ${isBottom ? "opacity-0" : "opacity-100"}`}>
+        <div className={`flex flex-col gap-2 w-64 min-h-full transition-all duration-300 ${isSticky ? "fixed top-[150px] w-48" : ""} ${isBottom ? "opacity-0" : "opacity-100"}`}>
             <h1 className="mt-2 mb-4 font-semibold text-3xl">Categories</h1>
             {CourseMap.map((course, index) => (
             <div

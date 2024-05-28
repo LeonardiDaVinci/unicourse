@@ -9,7 +9,6 @@ const Dropdown = ({heading, subCategories, callbackFn}) => {
     <div className='flex flex-col'>
         <div onClick={handleToggle} className='flex justify-between'>
             <p className='font-medium'>{heading}</p>
-            <div>{'>'}</div>
         </div>
         <div className={`${toggle ? "visible" : 'hidden'} font-inter font-light mb-1 pl-4`}>
         {subCategories?.map((categories, i)=>{

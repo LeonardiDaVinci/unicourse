@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsInVzZXJuYW1lIjoiQWxiZXJ0IExlb25hcmRpIiwiZW1haWwiOiJsZW9nYXRzdW1hQGdtYWlsLmNvbSIsImlhdCI6MTcxNjk5NzA3NywiZXhwIjoxNzE2OTk3MTk3fQ.htBozFiMxbyY5b4FG7rYKKxyhWeiK9Pf_lzutm1B8Rg
+###
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "username": "Albert Leonardi",
+    "email": "leogatsuma@gmail.com",
+    "password": "123456",
+    "confPassword": "123456"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "username": "Albert Leonardi",
+    "password": "123456"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout

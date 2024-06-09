@@ -5,10 +5,10 @@ POST http://localhost:5000/register
 Content-Type: application/json
 
 {
-    "username": "Albert Leonardi",
-    "email": "leogatsuma@gmail.com",
-    "password": "123456",
-    "confPassword": "123456"
+    "username": "Haibeb",
+    "email": "hai@gmail.com",
+    "password": "1234569",
+    "confPassword": "1234569"
 }
 
 ###

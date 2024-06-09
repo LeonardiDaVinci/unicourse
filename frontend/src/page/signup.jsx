@@ -4,30 +4,35 @@ import Header from "../component/header";
 import Footer from "../component/footer";
 import PageHeader from "../component/pageheader";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const title = "Register Now";
 const btnText = "Get Started Now";
 
 const SignupPage = () => {
-  const [values, setvalues] = useState({
-    username: "",
-    email: "",
-    password: "",
-    confPassword: "",
-  });
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confPassword, setConfPassword] = useState('');
+  const navigate = useNavigate();
+  const [msg, setMsg] = useState('')
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const { password, confPassword } = values; 
-    if (password === confPassword) {
-      axios
-        .post("http://localhost:8081/register", values)
-        .then((res) => console.log(res))
-        .catch((err) => console.log(err)); 
-    } else {
-      console.log("Passwords do not match"); 
+  const Register = async(e) =>{
+    e.preventDefault();
+    try {
+      await axios.post('http://localhost:5000/register', {
+        username: name,
+        email: email,
+        password: password,
+        confPassword: confPassword
+      });
+      navigate('/login')
+    } catch (error) {
+      if(error.response){
+        setMsg(error.response.data.msg);
+      }
     }
-  };
+  }
   
   return (
     <Fragment>
@@ -40,15 +45,13 @@ const SignupPage = () => {
         <div className="container">
           <div className="account-wrapper">
             <h3 className="title">{title}</h3>
-            <form className="account-form" onSubmit={handleSubmit}>
+            <form className="account-form" onSubmit={ Register }>
               <div className="form-group">
                 <input
                   type="text"
                   name="name"
                   placeholder="User Name"
-                  onChange={(e) =>
-                    setvalues({ ...values, username: e.target.value })
-                  }
+                  value={name} onChange={(e) => setName(e.target.value)}
                 />
               </div>
               <div className="form-group">
@@ -56,9 +59,7 @@ const SignupPage = () => {
                   type="email"
                   name="email"
                   placeholder="Email"
-                  onChange={(e) =>
-                    setvalues({ ...values, email: e.target.value })
-                  }
+                  value={email} onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
               <div className="form-group">
@@ -66,9 +67,7 @@ const SignupPage = () => {
                   type="text"
                   name="password"
                   placeholder="Password"
-                  onChange={(e) =>
-                    setvalues({ ...values, password: e.target.value })
-                  }
+                  value={password} onChange={(e) => setPassword(e.target.value)}
                 />
               </div>
               <div className="form-group">
@@ -76,9 +75,7 @@ const SignupPage = () => {
                   type="text"
                   name="password"
                   placeholder="Confirm Password"
-                  onChange={(e) =>
-                    setvalues({ ...values, confPassword: e.target.value })
-                  }
+                  value={confPassword} onChange={(e) => setConfPassword(e.target.value)}
                 />
               </div>
               <div className="form-group">
@@ -92,6 +89,7 @@ const SignupPage = () => {
                 Already have account? <Link to="/login">Login</Link>
               </span>
             </div>
+            <p className="text-center">{msg}</p>
           </div>
         </div>
       </div>

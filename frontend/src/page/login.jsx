@@ -1,15 +1,37 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../component/footer";
 import Header from "../component/header";
 import PageHeader from "../component/pageheader";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const title = "Welcome!";
 const btnText = "Get in!";
 
 const LoginPage = () => {
+  const [name, setName] = useState("");
+  const [password, setPassword] = useState("");
+  const [msg, setMsg] = useState("");
+  const navigate = useNavigate();
+
+  const Auth = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post("http://localhost:5000/login", {
+        username: name,
+        password: password,
+      });
+      navigate("/");
+    } catch (error) {
+      if (error.response) {
+        setMsg(error.response.data.msg);
+      }
+    }
+  };
+
   return (
-    <Fragment>  
+    <Fragment>
       <Header />
       <PageHeader title={"Login Page"} curPage={"Login"} />
       <div
@@ -19,15 +41,23 @@ const LoginPage = () => {
         <div className="container">
           <div className="account-wrapper">
             <h3 className="title">{title}</h3>
-            <form className="account-form">
+            <form className="account-form" onSubmit={Auth}>
               <div className="form-group">
-                <input type="text" name="name" placeholder="User Name *" />
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="User Name *"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
               </div>
               <div className="form-group">
                 <input
                   type="password"
                   name="password"
                   placeholder="Password *"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
                 />
               </div>
               <div className="form-group">
@@ -53,6 +83,7 @@ const LoginPage = () => {
                 Don’t Have any Account? <Link to="/signup">Sign Up</Link>
               </span>
             </div>
+            <p className="text-center">{msg}</p>
           </div>
         </div>
       </div>

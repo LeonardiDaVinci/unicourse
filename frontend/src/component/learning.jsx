@@ -92,7 +92,7 @@ const Learning = () => {
                 </div>
                 <br />
                 <br />
-                <div className="course-enroll row g-4 items-center justify-content-center row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-1 course-filter">
+                <div className="course-enroll row g-4 items-center justify-center justify-content-center row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-1">
                     <Link to="/homelog" className="lab-btn"><span>Search More</span></Link>
                 </div>
             </div>

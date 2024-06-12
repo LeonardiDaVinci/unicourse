@@ -88,6 +88,9 @@ const Learning = () => {
                                 </div>
                             ) })
                         }
+                        <div className="course-enroll">
+                            <Link to="/homelog" className="lab-btn"><span>Search More</span></Link>
+                        </div>
                     </div>
                 </div>
             </div>

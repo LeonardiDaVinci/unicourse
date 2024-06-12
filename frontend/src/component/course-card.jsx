@@ -9,7 +9,7 @@ export default function CourseCard({data}) {
                 <p className="text-base m-0">{data?.owner}</p>
                 <div className="w-full m-0">{data?.rating} rating test</div>
             </div>
-            <h1 className="text-xl">Rp.{data?.price}</h1>
+            <h1 className="text-xl">Rp{data?.price}</h1>
         </div>
     )
 }

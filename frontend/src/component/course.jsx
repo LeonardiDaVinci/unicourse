@@ -16,87 +16,87 @@ import Author4 from "../assets/images/course/author/04.jpg";
 import Author5 from "../assets/images/course/author/05.jpg";
 import Author6 from "../assets/images/course/author/06.jpg";
 
-const title = "Our Courses";
+const title = "Recommended Courses";
 
 const CourseData = [
     {
-        imgUrl: Image16,
-        imgAlt: 'course rajibraj91 rajibraj',
-        cate: 'English',
-        title: 'Basic English Spoken and Writing',
+        imgUrl: Image18,
+        imgAlt: 'course webdev',
+        cate: 'Web Development',
+        title: 'Create The Strongest Web Like Jujutsu',
         author: Author1,
-        authorName: 'William Smith',
-        price: '$199.00',
+        authorName: 'Richard',
+        price: 'Rp3.333.000',
         id: 1,
     },
     {
         imgUrl: Image17,
-        imgAlt: 'course rajibraj91 rajibraj',
-        cate: 'Software',
-        title: 'Learn Advance with PHP Language',
+        imgAlt: 'course webdev',
+        cate: 'Web Development',
+        title: 'Tips and Trick to Make Smooth Websites',
         author: Author2,
-        authorName: 'Angel Mili',
-        price: '$199.00',
+        authorName: 'Jess',
+        price: 'Rp2.222.000',
         id: 2,
     },
     {
-        imgUrl: Image18,
-        imgAlt: 'course rajibraj91 rajibraj',
+        imgUrl: Image16,
+        imgAlt: 'course dummy',
         cate: 'Design',
         title: 'Logo Design in Adobe Illustrator',
         author: Author3,
         authorName: 'Sajahan Sagor',
-        price: '$199.00',
+        price: 'Rp2.999.000',
         id: 3,
     },
     {
         imgUrl: Image19,
-        imgAlt: 'course rajibraj91 rajibraj',
+        imgAlt: 'course dummy',
         cate: 'Photography',
         title: 'Digital Photography for Beginner',
         author: Author4,
         authorName: 'Ummi Nishat',
-        price: '$199.00',
+        price: 'Rp2.999.000',
         id: 4,
     },
     {
         imgUrl: Image20,
-        imgAlt: 'course rajibraj91 rajibraj',
+        imgAlt: 'course dummy',
         cate: 'Marketing',
         title: 'Advance Social Media Marketing',
         author: Author5,
         authorName: 'Rassel Hossin',
-        price: '$199.00',
+        price: 'Rp2.999.000',
         id: 5,
     },
     {
         imgUrl: Image21,
-        imgAlt: 'course rajibraj91 rajibraj',
+        imgAlt: 'course dummy',
         cate: 'Music',
         title: 'A Guidelines Complete Guitar System',
         author: Author6,
         authorName: 'Zinat Zaara',
-        price: '$199.00',
+        price: 'Rp2.999.000',
         id: 6,
     },
     {
         imgUrl: Image22,
-        imgAlt: 'course rajibraj91 rajibraj',
+        imgAlt: 'course dummy',
         cate: 'Design',
         title: 'Learn Piano Guidelines System A to Z',
         author: Author1,
-        authorName: 'William Smith',
-        price: '$199.00',
+        authorName: 'Richard',
+        price: 'Rp2.999.000',
         id: 7,
     },
     {
         imgUrl: Image23,
-        imgAlt: 'course rajibraj91 rajibraj',
+        imgAlt: 'course dummy',
         cate: 'Software',
         title: 'Advance Professional Graphic Design',
         author: Author3,
-        authorName: 'Angel Mili',
-        price: '$199.00',
+        authorName: 'Sajahan Sagor',
+        price: 'Rp2.999.000',
         id: 8,
     },
 ]
@@ -149,7 +149,7 @@ const Course = () => {
                                                 </div>
                                             </div>
                                             <div className="course-content">
-                                                <Link to="/course-single"><h5>{title}</h5></Link>
+                                                <Link to="/course1"><h5>{title}</h5></Link>
                                                 <div className="course-footer">
                                                     <div className="course-author">
                                                         <img src={author} alt={imgAlt} />

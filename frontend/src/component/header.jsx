@@ -52,7 +52,7 @@ const Header = () => {
             </ul>
             <ul className="lab-ul social-icons d-flex align-items-center">
               <li>
-                <p>Find us on : </p>
+                <p>Find us on: </p>
               </li>
               {socialList.map((val, i) => (
                 <li key={i}>
@@ -82,9 +82,6 @@ const Header = () => {
                   </li>
                   <li>
                     <NavLink to="/course">Course</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/blog">Blog</NavLink>
                   </li>
                   <li>
                     <NavLink to="/contact">Contact</NavLink>

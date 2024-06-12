@@ -25,3 +25,46 @@ GET http://localhost:5000/token
 
 ###
 DELETE http://localhost:5000/logout
+
+###
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "username": "Latief",
+    "email": "latief@gmail.com",
+    "password": "0987654321",
+    "confPassword": "0987654321"
+}
+
+###
+POST http://localhost:5000/addcourse
+Content-Type: application/json
+
+{
+    "name": "Frieren Keren",
+    "teacherId": "1",
+    "category": "Mobile-Dev",
+    "rating": "4.5",
+    "price": "2000000"
+}
+
+###
+GET http://localhost:5000/courses
+
+###
+POST http://localhost:5000/addcoursedetail
+Content-Type: application/json
+
+{
+    "courseId": "1",
+    "desc": "Ini buat belajar tentang kehidupan",
+    "duration": "40",
+    "learning_outcomes": "Laravel, Web-Dev, API",
+    "modules": "41",
+    "students": "2000",
+    "language": "Indonesia"
+}
+
+###
+GET http://localhost:5000/course-details/1

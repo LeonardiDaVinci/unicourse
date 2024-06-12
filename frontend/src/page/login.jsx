@@ -22,7 +22,7 @@ const LoginPage = () => {
         username: name,
         password: password,
       });
-      navigate("/");
+      navigate("/homelog");
     } catch (error) {
       if (error.response) {
         setMsg(error.response.data.msg);
@@ -74,7 +74,8 @@ const LoginPage = () => {
                   className="d-block lab-btn"
                   style={{ background: "#0e1111" }}
                 >
-                  <span>{btnText}</span>
+                  
+                  <Link to="/homelog"><span>{btnText}</span></Link>
                 </button>
               </div>
             </form>

@@ -1,33 +1,10 @@
 import { Link } from "react-router-dom";
 
 const newsTitle = "Want Us To Email You About Special Offers And Updates?";
-const siteTitle = "Site Map";
 const useTitle = "Useful Links";
 const socialTitle = "Social Contact";
-const supportTitle = "Our Support";
+const supportTitle = "Our Product";
 
-const siteList = [
-  {
-    text: "Documentation",
-    link: "#",
-  },
-  {
-    text: "Feedback",
-    link: "#",
-  },
-  {
-    text: "Plugins",
-    link: "#",
-  },
-  {
-    text: "Support Forums",
-    link: "#",
-  },
-  {
-    text: "Themes",
-    link: "#",
-  },
-];
 
 const useList = [
   {
@@ -35,15 +12,11 @@ const useList = [
     link: "#",
   },
   {
-    text: "Help Link",
+    text: "Contact Us",
     link: "#",
   },
   {
     text: "Terms & Conditions",
-    link: "#",
-  },
-  {
-    text: "Contact Us",
     link: "#",
   },
   {
@@ -54,10 +27,6 @@ const useList = [
 
 const socialList = [
   {
-    text: "Facebook",
-    link: "#",
-  },
-  {
     text: "Twitter",
     link: "#",
   },
@@ -66,7 +35,7 @@ const socialList = [
     link: "#",
   },
   {
-    text: "YouTube",
+    text: "Linkedin",
     link: "#",
   },
   {
@@ -77,23 +46,19 @@ const socialList = [
 
 const supportList = [
   {
-    text: "Help Center",
+    text: "Unicourse Plus",
     link: "#",
   },
   {
-    text: "Paid with Mollie",
+    text: "My Learning",
     link: "#",
   },
   {
-    text: "Status",
+    text: "My Schedule",
     link: "#",
   },
   {
-    text: "Changelog",
-    link: "#",
-  },
-  {
-    text: "Contact Support",
+    text: "Cart",
     link: "#",
   },
 ];
@@ -135,26 +100,6 @@ const Footer = () => {
         >
           <div className="container">
             <div className="row g-4 row-cols-xl-4 row-cols-md-2 row-cols-1 justify-content-center">
-              <div className="col">
-                <div className="footer-item">
-                  <div className="footer-inner">
-                    <div className="footer-content">
-                      <div className="title">
-                        <h4>{siteTitle}</h4>
-                      </div>
-                      <div className="content">
-                        <ul className="lab-ul">
-                          {siteList.map((val, i) => (
-                            <li key={i}>
-                              <a href={val.link}>{val.text}</a>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
               <div className="col">
                 <div className="footer-item">
                   <div className="footer-inner">
